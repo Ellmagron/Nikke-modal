@@ -49,23 +49,20 @@ section {
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgb(0, 0, 0, 0.3);
   z-index: 10;
-
 }
 
-tbody{
-    margin-top: 5px;
+tbody {
+  margin-top: 5px;
 }
 
 .title-cell {
-        text-align: center; /* Centraliza o conteúdo horizontalmente */
-        vertical-align: top; /* Alinha o conteúdo na parte superior */
-        font-size: 15pt;
-      }
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  vertical-align: top; /* Alinha o conteúdo na parte superior */
+  font-size: 15pt;
+}
 
-
-.img{
-    max-width: 90%;
-    
+.img {
+  max-width: 90%;
 }
 
 .btn {
@@ -83,13 +80,23 @@ tbody{
   z-index: 5;
 }
 
-.close-modal{
-    position: absolute;
-    top: 1.2rem;
-    right: 2rem;
-    font-size: 5rem;
-    color: #333;
-    cursor: pointer;
-    border: none;
-    background: none;
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.foot {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
 }
