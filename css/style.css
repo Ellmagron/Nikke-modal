@@ -59,6 +59,7 @@ tbody{
 .title-cell {
         text-align: center; /* Centraliza o conteúdo horizontalmente */
         vertical-align: top; /* Alinha o conteúdo na parte superior */
+        font-size: 15pt;
       }
 
 
@@ -68,7 +69,6 @@ tbody{
 }
 
 .btn {
-  background-color: black;
   margin-right: 10px;
 }
 

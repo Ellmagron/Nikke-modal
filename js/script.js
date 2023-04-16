@@ -12,9 +12,9 @@ const btnBrid = document.querySelector(".brid");
 const btnQuency = document.querySelector(".quency");
 const btnSin = document.querySelector(".sin");
 const btnCenti = document.querySelector(".centi");
-const btnVolume = document.querySelector(".volume");
-const btnLudmila = document.querySelector(".ludmila");
-const btnYan = document.querySelector(".yan");
+const btnAnis = document.querySelector(".anis");
+const btnSakura = document.querySelector(".sakura");
+const btnFolkwang = document.querySelector(".folkwang");
 
 const img = document.querySelector(".img");
 
@@ -23,12 +23,11 @@ let char = "";
 const callChar = function (title) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
-  img.src = `./img/char1/${title.textContent}.png`;
-
+  img.src = `./img/char1/${title.textContent}.gif`;
 };
 
 const closeModal = function () {
-  title.textContent = "Nikke"
+  title.textContent = "Nikke";
 
   modal.classList.toggle("hidden");
   overlay.classList.toggle("hidden");
@@ -64,19 +63,25 @@ btnCenti.addEventListener("click", function () {
   callChar(title);
 });
 
-btnYan.addEventListener("click", function () {
-  title.textContent = "Yan";
+btnAnis.addEventListener("click", function () {
+  title.textContent = "Anis";
   callChar(title);
 });
 
-btnLudmila.addEventListener("click", function () {
-  title.textContent = "Ludmila";
+btnSakura.addEventListener("click", function () {
+  title.textContent = "Sakura";
   callChar(title);
 });
 
-btnVolume.addEventListener("click", function () {
-  title.textContent = "Volume";
+btnFolkwang.addEventListener("click", function () {
+  title.textContent = "Folkwang";
   callChar(title);
 });
 
 btnCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (a) {
+  if (a.key === "Escape" && !modal.classList.contains("hidden")) 
+  closeModal();
+});
