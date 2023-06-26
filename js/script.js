@@ -8,7 +8,7 @@ const img = document.querySelector(".img");
 
 let charName = "";
 
-//Declarando uma função de expressão que abri o modal + overlay + um determinado personagem
+//Declarando uma função de expressão para abrir  modal + overlay + um determinado personagem
 const callChar = function (charName) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -23,13 +23,13 @@ const closeModal = function () {
 };
 
 //Adicionando evento click em todos os botões
-for (let i = 0; i < btnChar.length; i++) {
-  btnChar[i].addEventListener("click", function () {
-    charName = btnChar[i].dataset.char;
+btnChar.forEach((btn) =>
+  btn.addEventListener("click", function () {
+    charName = btn.dataset.char;
     title.textContent = charName;
     callChar(charName);
-  });
-}
+  })
+);
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
